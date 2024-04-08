@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+// @import url('../components/Main/mainPageContent/img/chaveirofachada.jpg');
+//Logos and Images::
+.front-wallpaper {
+    background-image: url('../components/Main/mainPageContent/img/chaveirofachada.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center;
+    -webkit-mask-image: linear-gradient(to top, transparent 25%, black 100%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    margin-top: 10vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clear: both;
+    
+}
+
+.inner {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 6vh;
+}
+
+@media (max-width: 460px ) {
+  .inner{
+    font-size: 4vh;
+  }
+}
