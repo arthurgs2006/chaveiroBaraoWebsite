@@ -18,8 +18,8 @@ export default function Header() {
     const toggle = () => setIsOpen(!isOpen);
     return (
         <>
-            <header className='bg-black'>
-                <Container>
+            <header className='bg-black sticky'>
+                <Container >
                     <Navbar className='w-100'
                         expand="lg">
                         <NavbarBrand href='/'>
@@ -28,10 +28,10 @@ export default function Header() {
                         </NavbarBrand>
                         <NavbarToggler onClick={toggle} className="me-2 bg-light" />
                         <Collapse isOpen={isOpen} navbar >
-                            <Nav className=" d-flex ms-auto" navbar>
+                            <Nav className="d-flex ms-auto" navbar>
                                 <NavItem >
                                     <NavLink href='#contact'>
-                                        <b className='text-light '>Contatos</b>
+                                        <b className='text-light'>Contatos</b>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>

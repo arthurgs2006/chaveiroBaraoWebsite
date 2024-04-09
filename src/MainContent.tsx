@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import Header from "../Header/Header";
-import PageContent from "./mainPageContent/PageContent";
+import Header from "./components/Header/Header";
+import PageContent from "./components/Main/mainPageContent/PageContent";
 
 const MainPageContent  = () => {
     
@@ -8,9 +8,11 @@ const MainPageContent  = () => {
         <>
             <Header />
             <PageContent />
-
+            
         </>
     )
 }
 
 export default MainPageContent;
+
+

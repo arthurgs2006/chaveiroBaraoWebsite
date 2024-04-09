@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-// @import url('../components/Main/mainPageContent/img/chaveirofachada.jpg');
-//Logos and Images::
+//Logos and Images:
+//(MainPageContent):
 .front-wallpaper {
-    background-image: url('../components/Main/mainPageContent/img/chaveirofachada.jpg');
+    background-image: url('../assets/images/chaveirofachada.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
     background-position: center;
     -webkit-mask-image: linear-gradient(to top, transparent 25%, black 100%);
 }
-
 .overlay {
     position: absolute;
     top: 0;
@@ -24,15 +23,43 @@
     clear: both;
     
 }
-
 .inner {
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 6vh;
 }
-
+.sticky{ //Tornar header fixo
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+//Responsive Size:
 @media (max-width: 460px ) {
   .inner{
     font-size: 4vh;
+  }
+}
+
+.gridCol{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  span{
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1rem;
+    font-weight: 700;
+  }
+}
+
+.clipImg{
+  width: 30vh;
+  // height: 20vh;
+  clip-path: xywh(8.5vh 5px 50% 100% round 1vh 1vh );
+  transition: 0.3s;
+  &:hover{
+    clip-path: xywh(0 5px 100% 100% round 1vh 1vh);
   }
 }

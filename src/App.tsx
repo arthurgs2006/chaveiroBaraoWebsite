@@ -1,4 +1,4 @@
-import MainPageContent from './components/Main/MainContent';
+import MainPageContent from './MainContent';
 import './styles/style.scss';
 function App() {
   return (
