@@ -6,7 +6,7 @@ import ServiceItem from './serviceItem'
 export default function ServiceGrid() {
     return (
         <>
-            <section className="bg-black ">
+            <section className="bg-black pb-5">
                 <Container xs>
                     <h1 className='text-white'>Confira alguns de nossos serviços:</h1>
                     <hr className='text-white' />

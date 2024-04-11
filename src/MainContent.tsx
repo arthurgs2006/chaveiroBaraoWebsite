@@ -8,7 +8,6 @@ const MainPageContent  = () => {
         <>
             <Header />
             <PageContent />
-            
         </>
     )
 }
