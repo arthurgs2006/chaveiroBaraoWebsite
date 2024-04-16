@@ -90,4 +90,22 @@ $white-smoke: #f3f3f3;
   height: 60vh;
 }
 
+//Default For All:
+.default-pad{
+  padding-top: 20rem;
+}
 
+//LocksmithAD:
+
+.imgGridAnimation{
+  transition: 0.3s;
+  &:hover{
+    padding: 1rem;
+  }
+}
+
+@media(max-width: 990px){
+  .titleItem{
+    padding-top: 2rem;
+  }
+}

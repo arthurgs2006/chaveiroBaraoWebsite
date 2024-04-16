@@ -1,14 +1,14 @@
 import { Container, Row } from 'reactstrap'
-import ControlsImg from '../../../assets/images/Controles_Image.jpg'
+import ControlsImg from '../../../../assets/images/Controles_Image.jpg'
 import ServiceItem from './serviceItem'
 
 
 export default function ServiceGrid() {
     return (
         <>
-            <section className="bg-black pb-5">
+            <section className="bg-black default-pad">
                 <Container xs>
-                    <h1 className='text-white'>Confira alguns de nossos serviços:</h1>
+                    <h1 className='text-white'>Em Destaque:</h1>
                     <hr className='text-white' />
                     <Row className='d-flex justify-content-center mt-5 gap-4'>
                         <ServiceItem imgUrl={ControlsImg} spanText='Conserto de Controles' id={Math.random() * 100} />

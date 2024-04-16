@@ -1,9 +1,8 @@
 import { Container, Card, Col } from "reactstrap"
 export default function Map() {
-
     return (
         <>
-            <section className="bg-black pt-5">
+            <section className="bg-black default-pad ">
                 <Container className="text-white ">
                     <h1>Localização:</h1>
                     <hr />
@@ -21,7 +20,7 @@ export default function Map() {
                         </Col>
                     </div>
                 </Container>
-            </section>
+            </section >
         </>
     )
 }
