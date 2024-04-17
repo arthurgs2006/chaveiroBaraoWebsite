@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 $white-smoke: #f3f3f3;
+$bg-dark: #0000;
 
+body{
+  background-color: $bg-dark;
+}
 
 //Logos and Images:
 //(MainPageContent):
@@ -47,7 +51,6 @@ $white-smoke: #f3f3f3;
     font-size: 4vh;
   }
   .gridCol{
-    // gap: 10vh;
     .clipImg{
       margin-left: 0;
     }
@@ -104,8 +107,30 @@ $white-smoke: #f3f3f3;
   }
 }
 
-@media(max-width: 990px){
+.titleItem{
+  padding-top: 2rem;
+}
+
+@media(max-width: 440px){
   .titleItem{
-    padding-top: 2rem;
+    padding-top: 0;
+  }
+  .default-pad{
+    padding-top: 1rem;
+  }
+}
+
+//About Us:
+
+.cover{
+  max-height: 60vh;
+  max-width: 60vh;
+  background-size: cover;
+}
+
+@media(max-width: 767px){
+  .f-column{
+    flex-direction: column;
+    gap: 4vh;
   }
 }

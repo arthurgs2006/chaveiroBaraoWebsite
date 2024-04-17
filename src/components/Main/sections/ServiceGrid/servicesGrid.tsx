@@ -8,7 +8,7 @@ export default function ServiceGrid() {
         <>
             <section className="bg-black default-pad">
                 <Container xs>
-                    <h1 className='text-white'>Em Destaque:</h1>
+                    <h1 className='text-white'>Em Destaque</h1>
                     <hr className='text-white' />
                     <Row className='d-flex justify-content-center mt-5 gap-4'>
                         <ServiceItem imgUrl={ControlsImg} spanText='Conserto de Controles' id={Math.random() * 100} />
