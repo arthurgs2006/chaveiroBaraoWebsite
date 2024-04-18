@@ -13,7 +13,7 @@ export default function TypewriterSection() {
           </div>
           <div className="overlay">
               <h1 className='text-white bg-text inner d-flex flex-column '>
-                <span className=' mx-2'>
+                <span className='mx-2'>
                   Procurando por
                   <Typewriter
                     options={{

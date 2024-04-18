@@ -1,5 +1,5 @@
 import { Container, Col, Row } from "reactstrap"
-import sharpPilerImg from '../../../assets/images/AfiandoAlicate.jpg' 
+import sharpPilerImg from '../../../assets/images/AfiandoAlicate.jpg'
 export default function locksmithAD() {
 
     return (
@@ -60,8 +60,8 @@ export default function locksmithAD() {
                                 </Col>
                             </Row>
                         </div>
-                        <Col className="d-flex align-items-center ">
-                            <h1 className="px-2 titleItem">
+                        <Col className="px-2 d-flex align-items-center">
+                            <h1 className="titleItem">
                                 Conheça seu novo profissional,
                                 pronto para qualquer serviço!
                             </h1>

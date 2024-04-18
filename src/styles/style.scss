@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+$gray-color: #6c757d;
 $white-smoke: #f3f3f3;
 $bg-dark: #0000;
 
@@ -45,7 +45,7 @@ body{
   z-index: 100;
 }
 
-//Responsive Size:
+// Responsive Size:
 @media (max-width: 460px) {
   .inner {
     font-size: 4vh;
@@ -87,8 +87,9 @@ body{
   }
 }
 
-//Map Area:
+// Map Area:
 .mapCard{
+  flex-wrap: wrap;
   max-width: 60vh;
   height: 60vh;
 }
@@ -120,7 +121,7 @@ body{
   }
 }
 
-//About Us:
+// About Us:
 
 .cover{
   max-height: 60vh;
@@ -128,9 +129,49 @@ body{
   background-size: cover;
 }
 
+// .aboutus_Animation{
+//   animation-duration: 15s;
+//   animation-name: img_change;
+//   animation-iteration-count: infinite;
+//   background-position: center;
+//   height: 100%;
+//   width: 100%;
+//   background-size: cover;
+// }
+
+// @keyframes img_change {
+//   0%{
+//     background-image: url('../assets/images/FachadaChaveiroInterno.jpg');
+//   }
+//   20%{
+//     background-image: url('../assets/images/chaveirofachada.jpg');
+//   }
+//   40%{
+//     background-image: url('../assets/images/chaveirofachada.jpg');
+//   }
+//   100%{
+//       background-image: url('../assets/images/FachadaChaveiroInterno.jpg');
+//   }
+// }
+
 @media(max-width: 767px){
   .f-column{
     flex-direction: column;
     gap: 4vh;
   }
+  // .cover{
+  //   object-fit: cover;
+  //   height: 30vh;
+  // }
 }
+
+//Footer:
+
+.links{
+  color: $gray-color;
+  transition: 0.3s;
+  &:hover{
+    color: $white-smoke;
+  }
+}
+
