@@ -8,17 +8,19 @@ export default function ServiceGrid() {
         <>
             <section className="bg-black default-pad">
                 <Container xs>
-                    <h1 className='text-white'>Em Destaque</h1>
+                    <h1 className='text-white'>
+                        <i className="bi bi-escape"></i> Em Destaque
+                    </h1>
                     <hr className='text-white' />
-                    <Row className='d-flex justify-content-center mt-5 gap-4'>
+                    <Row className='d-flex justify-content-center gap-4 mt-4'>
                         <ServiceItem imgUrl={ControlsImg} spanText='Conserto de Controles' id={Math.random() * 100} />
                         <ServiceItem imgUrl={ControlsImg} spanText='Afiação de Alicates' id={Math.random() * 100} />
                         <ServiceItem imgUrl={ControlsImg} spanText='Cópias de Chaves' id={Math.random() * 100} />
                     </Row>
-                    <Row className='d-flex justify-content-center gap-4 mt-3'>
-                        <ServiceItem imgUrl={ControlsImg} spanText='Conserto de Controles' id={Math.random() * 100} />
+                    <Row className='d-flex justify-content-center gap-4 mt-4'>
                         <ServiceItem imgUrl={ControlsImg} spanText='Afiação de Alicates' id={Math.random() * 100} />
                         <ServiceItem imgUrl={ControlsImg} spanText='Cópias de Chaves' id={Math.random() * 100} />
+                        <ServiceItem imgUrl={ControlsImg} spanText='Afiação de Alicates' id={Math.random() * 100} />
                     </Row>
                 </Container>
             </section>

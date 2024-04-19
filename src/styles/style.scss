@@ -72,7 +72,7 @@ body{
   .clipImg {
     clip-path: xywh(8vh 0px 12vh 100% round 1vh 1vh);
     max-width: 30vh;
-    max-height: 20vh;
+    max-height: 30vh;
     width: auto;
     height: auto;
     transition: 0.3s;
@@ -117,7 +117,17 @@ body{
     padding-top: 0;
   }
   .default-pad{
-    padding-top: 1rem;
+    padding-top: 1.25rem;
+  }
+  .mapCard{
+    height: auto;
+  }
+  .imgGridAnimation{
+    &:hover{
+      padding: 0.1rem;
+      border: 1px solid gray;
+      box-sizing: border-box;
+    }
   }
 }
 
@@ -175,3 +185,12 @@ body{
   }
 }
 
+//All Page:
+@media (max-width: 990px) {
+  .d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
