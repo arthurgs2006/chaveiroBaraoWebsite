@@ -5,43 +5,43 @@ export default function locksmithAD() {
     return (
         <>
             <section className="bg-black text-white default-pad">
-                <Container fluid='sm'>
-                    <div className="d-flex gap-5" >
+                <Container>
+                    <div className="d-flex gap-2" >
                         <div className="border-0 bg-black mapCard">
-                            <Row className="d-flex flex-wrap px-3 gap-2">
-                                <Col className="gap-2 d-flex flex-column flex-wrap ">
+                            <Row className="d-flex flex-wrap gap-3 px-0 " >
+                                <div className=" d-flex flex-wrap px-0 gap-3">
                                     <img
-                                        className="img-fluid rounded imgGridAnimation"
+                                        className="img-fluid rounded imgGridAnimation w-25 "
                                         src={sharpPilerImg} alt="Afiação de Alicate" />
                                     <img
-                                        className="img-fluid rounded imgGridAnimation"
+                                        className="img-fluid rounded imgGridAnimation w-25"
                                         src={sharpPilerImg} alt="Afiação de Alicate" />
                                     <img
-                                        className="img-fluid rounded imgGridAnimation"
+                                        className="img-fluid rounded imgGridAnimation w-25"
                                         src={sharpPilerImg} alt="Afiação de Alicate" />
-                                </Col>
-                                <Col className="gap-2 d-flex flex-column flex-wrap ">
+                                </div>
+                                <div className=" d-flex flex-wrap px-0 gap-3">
                                     <img
-                                        className="img-fluid rounded imgGridAnimation"
-                                        src={sharpPilerImg} alt="Afiação de Alicate" />
-                                    <img
-                                        className="img-fluid rounded imgGridAnimation"
+                                        className="img-fluid rounded imgGridAnimation w-25"
                                         src={sharpPilerImg} alt="Afiação de Alicate" />
                                     <img
-                                        className="img-fluid rounded imgGridAnimation"
-                                        src={sharpPilerImg} alt="Afiação de Alicate" />
-                                </Col>
-                                <Col className="gap-2 d-flex flex-column flex-wrap">
-                                    <img
-                                        className="img-fluid rounded imgGridAnimation"
+                                        className="img-fluid rounded imgGridAnimation w-25"
                                         src={sharpPilerImg} alt="Afiação de Alicate" />
                                     <img
-                                        className="img-fluid rounded imgGridAnimation"
+                                        className="img-fluid rounded imgGridAnimation w-25"
+                                        src={sharpPilerImg} alt="Afiação de Alicate" />
+                                </div>
+                                <div className=" d-flex flex-wrap px-0 gap-3">
+                                    <img
+                                        className="img-fluid rounded imgGridAnimation w-25"
+                                        src={sharpPilerImg} alt="Afiação de Alicate" />
+                                    <img 
+                                        className="img-fluid rounded imgGridAnimation w-25" 
                                         src={sharpPilerImg} alt="Afiação de Alicate" />
                                     <img
-                                        className="img-fluid rounded imgGridAnimation"
+                                        className="img-fluid rounded imgGridAnimation w-25"
                                         src={sharpPilerImg} alt="Afiação de Alicate" />
-                                </Col>
+                                </div>
                             </Row>
                         </div>
                         <Col className="px-2 d-flex align-items-center w-100">

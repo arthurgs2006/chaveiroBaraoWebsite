@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <>
             <footer className="bg-dark w-100 default-pad p-5">
-                <Container>
+                <Container fluid>
                     <Row className='gap-5'>
                         <Col>
                             <a href="#top">
@@ -55,10 +55,9 @@ export default function Footer() {
                                         @chaveiro_barao509
                                     </a>
                                 </span>
-                                <a href="#" target='_blank' className='text-decoration-none  
-                            d-flex flex-row gap-2 align-items-center fs-5 links'>
-                                    <i className="bi bi-envelope-at-fill"></i>
-                                    chaveirobarao@hotmail.com
+                                <a href="#" target='_blank' className='text-decoration-none d-flex
+                             gap-2 align-items-center fs-5 links text-break'>
+                                    <i className="bi bi-envelope-at-fill"></i>chaveirobarao@hotmail.com
                                 </a>
                             </div>
                         </Col>
