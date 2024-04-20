@@ -22,7 +22,7 @@ export default function Header() {
                 <Container >
                     <Navbar className='w-100'
                         expand="lg">
-                        <NavbarBrand href='/'>
+                        <NavbarBrand href='#top'>
                             <img src={chaveiroLogo} alt="Logotipo do Chaveiro Barão"
                                 className='img-fluid logo' width={'130'} />
                         </NavbarBrand>

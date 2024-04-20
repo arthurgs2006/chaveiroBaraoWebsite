@@ -1,25 +1,51 @@
 import FachadaInternaChaveiro from '../../../assets/images/FachadaChaveiroInterno.jpg'
+import Chaveiro2014 from '../../../assets/images/Chaveiro2014.jpg'
+import Chaveiro2020 from '../../../assets/images/Chaveiro2020.jpg'
 import {
     Container,
     Col,
-    Row
+    Row,
+    UncontrolledCarousel
 } from "reactstrap"
 
 export default function AboutUs() {
     return (
         <>
-            <section className="bg-black text-white default-pad pb-5" id="aboutus">
+            <section className="bg-black text-white default-pad pb-5">
                 <Container >
                     <Row className="d-flex flex-wrap f-column">
-                        <h1>Sobre Nós</h1>
+                        <h1 id="aboutus">Sobre Nós</h1>
                         <hr />
                         <Col className="d-flex">
-                            <img 
+                            <UncontrolledCarousel
+                                className='w-100 d-flex rounded overflow-hidden 
+                                carousel-inner '
+                                items={[{
+                                    altText: 'Chaveiro Barão',
+                                    caption: 'Chaveiro na Atualidade',
+                                    key: 1,
+                                    src: FachadaInternaChaveiro
+                                },
+                                {
+                                    altText: 'Chaveiro em 2020',
+                                    caption: 'Chaveiro em 2020',
+                                    key: 2,
+                                    src: Chaveiro2020
+                                },
+                                {
+                                    altText: 'Chaveiro em 2014',
+                                    caption: 'Chaveiro em 2014',
+                                    key: 3,
+                                    src: Chaveiro2014
+                                }
+                                ]}
+                            />
+                            {/* <img 
                             src={FachadaInternaChaveiro}
                             alt="Fachada do Chaveiro Barão" 
-                            className="img-fluid object-fit-cover rounded" />
+                            className="img-fluid object-fit-cover rounded" /> */}
                         </Col>
-                        <Col className="d-flex align-items-center p-2 flex-wrap text-break">
+                        <Col className="d-flex align-items-center p-2 flex-wrap text-break" >
                             <h5>
                                 Com ínicio em 2002, o <b>Chaveiro Barão &#169; </b>
                                 inicia sua carreira com nossa primeira loja, localizada

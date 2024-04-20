@@ -6,8 +6,8 @@ export default function Footer() {
     return (
         <>
             <footer className="bg-dark w-100 default-pad p-5">
-                <Container fluid>
-                    <Row className='gap-5'>
+                <Container fluid='sm'>
+                    <Row className='gap-5 '>
                         <Col>
                             <a href="#top">
                                 <img src={logoCB} alt="Logo do Chaveiro Barão"
@@ -15,22 +15,23 @@ export default function Footer() {
                             </a>
                             <a href="https://maps.app.goo.gl/MYqnb3DfNxtVxh896"
                                 target='_blank' className='text-decoration-none links' >
-                                <div className="d-flex flex-row px-4 gap-2">
-                                    <i className="bi bi-globe2 text-secondary"></i>
-                                    <h6 className='w-75'>
+                                <Col className="d-flex flex-row px-4 gap-2 links
+                                align-items-center">
+                                    <i className="bi bi-globe2 text-secondary "></i>
+                                    <h6 className='w-50'>
                                         Rua Carlos Chagas, 575 - Jardim Paulista, Ribeirão Preto, SP.
                                     </h6>
-                                </div>
+                                </Col>
                             </a>
                         </Col>
                         <Col className='text-white d-flex flex-column gap-4' id='contact'>
-                            <div className='d-flex flex-column gap-1'>
+                            <div className='d-flex flex-column gap-1 '>
                                 <h4>CONTATOS:</h4>
-                                <span className="d-inline-block" data-toggle="tooltip" title="Telefones de Contato">
+                                <span className="d-flex" data-toggle="tooltip" title="Telefones de Contato">
                                     <a className='text-decoration-none links
                             d-flex flex-row gap-2 align-items-center fs-5'>
                                         <i className="bi bi-telephone-fill"></i>
-                                        <div className='d-flex flex-column'>
+                                        <div className='d-flex flex-column text-wrap'>
                                             <span>
                                                 ( 16 ) 99132-7077 /
                                             </span>
@@ -43,11 +44,11 @@ export default function Footer() {
 
                                 <a href='#' target='_blank'
                                     className='text-decoration-none links
-                            d-flex flex-row gap-2 align-items-center fs-5'>
+                            d-flex flex-row gap-2 align-items-center fs-5 text-wrap'>
                                     <i className="bi bi-whatsapp"></i>
                                     ( 16 ) 99132-7077
                                 </a>
-                                <span className="d-inline-block" data-toggle="tooltip" title="Instagram">
+                                <span className="d-flex" data-toggle="tooltip" title="Instagram">
                                     <a href="https://www.instagram.com/chaveiro_barao509?igsh=bjBmNjVrZ3Zwd29z"
                                         className='text-decoration-none links d-flex flex-row gap-2 
                                 align-items-center fs-5' target='_blank'>
