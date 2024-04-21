@@ -3,10 +3,12 @@ $gray-color: #6c757d;
 $white-smoke: #f3f3f3;
 $bg-dark: #0000;
 
-*{
+* {
   box-sizing: border-box;
 }
-html, body{
+
+html,
+body {
   background-color: $bg-dark;
   width: 100%;
   height: 100%;
@@ -75,6 +77,7 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
+
     &:hover {
       span {
         text-shadow: $white-smoke 0.1vh 0.1vh 1vh;
@@ -149,7 +152,8 @@ html, body{
   max-width: 60vh;
   background-size: cover;
 }
-.carousel-inner > .carousel-item > img {
+
+.carousel-inner>.carousel-item>img {
   height: 50vh;
   filter: brightness(0.6)
 }
@@ -166,12 +170,46 @@ html, body{
 .links {
   color: $gray-color;
   transition: 0.3s;
+
   &:hover {
     color: $white-smoke;
   }
 }
 
 //All Page:
+
+.whatsAppIcon {
+  z-index: 6;
+  left: initial;
+  animation: whatsApp_move 4s infinite ;
+  transition: 0.3s;
+  img {
+    filter: brightness(0.7);
+    animation: whatsApp_move 4s infinite slidein;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    img {
+      filter: brightness(1);
+    }
+  }
+}
+
+@keyframes whatsApp_move {
+  from {
+    bottom: 0vh;
+  }
+
+  50% {
+    bottom: 2vh;
+  }
+
+  to {
+    bottom: 0vh;
+  }
+}
+
 @media (max-width: 990px) {
   .d-flex {
     align-items: center;
@@ -181,10 +219,11 @@ html, body{
 }
 
 @media screen and (max-width: 246px) {
-  .fs-5{
+  .fs-5 {
     font-size: smaller;
   }
-  .d-flex{
+
+  .d-flex {
     word-break: break-all;
   }
 }
