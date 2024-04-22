@@ -105,16 +105,20 @@ body {
   height: 60vh;
 }
 
-//Default For All:
-.default-pad {
-  padding-top: 20rem;
+//On highlight
+//(MODAL):
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 40%;
+  vertical-align: middle;
 }
 
 //LocksmithAD:
 
 .imgGridAnimation {
   transition: 0.3s;
-
+  
   &:hover {
     padding: 1rem;
   }
@@ -128,7 +132,7 @@ body {
   .titleItem {
     padding-top: 0;
   }
-
+  
   .default-pad {
     padding-top: 5rem;
   }
@@ -136,7 +140,7 @@ body {
   .mapCard {
     height: auto;
   }
-
+  
   .imgGridAnimation {
     &:hover {
       padding: 0.1rem;
@@ -170,13 +174,16 @@ body {
 .links {
   color: $gray-color;
   transition: 0.3s;
-
+  
   &:hover {
     color: $white-smoke;
   }
 }
 
 //All Page:
+.default-pad {
+  padding-top: 20rem;
+}
 
 .whatsAppIcon {
   z-index: 6;
