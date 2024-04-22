@@ -18,18 +18,21 @@ export default function ServiceItem<T extends ServiceItemType>(props: T) {
                     <img src={imgUrl} alt={title}
                         className='img-fluid object-fit-cover rounded'
                     />
-                    <span className='text-white '>
+                    <span className='text-white pt-3'>
                         {title}
                     </span>
                 </a>
             </div>
-            <Modal isOpen={modal} toggle={toggle} className="d-flex align-items-center">
+            <Modal isOpen={modal} toggle={toggle} 
+            className="d-flex align-items-center">
                 <ModalHeader toggle={toggle}>
                     {title}
                 </ModalHeader>
-                <ModalBody>
+                <ModalBody >
                     <img src={imgUrl} alt={title} className="img-fluid object-fit-cover rounded" />
-                    {description}
+                    <div className="description pt-3 container">
+                        {description}
+                    </div>
                 </ModalBody>
             </Modal>
         </>

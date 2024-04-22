@@ -2,7 +2,7 @@ import { Container, Card, Col } from "reactstrap"
 export default function Map() {
     return (
         <>
-            <section className="bg-black default-pad ">
+            <section className="bg-black default-pad">
                 <Container className="text-white ">
                     <h1><i className="bi bi-geo-fill">
                     </i>

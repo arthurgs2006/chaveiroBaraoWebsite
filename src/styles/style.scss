@@ -2,6 +2,7 @@
 $gray-color: #6c757d;
 $white-smoke: #f3f3f3;
 $bg-dark: #0000;
+$bg-gray: #222020;
 
 * {
   box-sizing: border-box;
@@ -64,10 +65,16 @@ body {
 
   .clipImg {
     max-width: 30vh;
-    max-height: 30vh;
+    max-height: 40vh;
+    padding: 1rem;
+    cursor: pointer;
     width: auto;
     height: auto;
     transition: 0.3s;
+    &:hover{
+      border-radius: 1rem;
+      background-color: $bg-gray;
+    }
   }
 
   span {
@@ -110,9 +117,16 @@ body {
 .modal:before {
   content: '';
   display: inline-block;
-  height: 40%;
+  height: 10%;
   vertical-align: middle;
 }
+.modal-content{
+  background-color: $bg-gray;
+  color: $white-smoke;
+  font-family: 'SF Pro','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 
 //LocksmithAD:
 
