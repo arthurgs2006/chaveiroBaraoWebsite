@@ -42,7 +42,7 @@ export default function Footer() {
                                     </a>
                                 </span>
 
-                                <a href='#' target='_blank'
+                                <a href='https://wa.me/5516991327077' target='_blank'
                                     className='text-decoration-none links
                             d-flex flex-row gap-2 align-items-center fs-5 text-wrap'>
                                     <i className="bi bi-whatsapp"></i>
@@ -56,7 +56,7 @@ export default function Footer() {
                                         @chaveiro_barao509
                                     </a>
                                 </span>
-                                <a href="#" target='_blank' className='text-decoration-none d-flex
+                                <a href="mailto:chaveirobarao@hotmail.com" target='_blank' className='text-decoration-none d-flex
                              gap-2 align-items-center fs-5 links text-break'>
                                     <i className="bi bi-envelope-at-fill"></i>chaveirobarao@hotmail.com
                                 </a>

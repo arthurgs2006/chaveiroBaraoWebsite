@@ -43,8 +43,8 @@ export default function locksmithAD() {
                                     <img
                                         className="img-fluid rounded imgGridAnimation w-25"
                                         src={Cadeado} alt="Cadeado" />
-                                    <img 
-                                        className="img-fluid rounded imgGridAnimation w-25" 
+                                    <img
+                                        className="img-fluid rounded imgGridAnimation w-25"
                                         src={ControlesAlarme} alt="Controles de Alarme" />
                                     <img
                                         className="img-fluid rounded imgGridAnimation w-25"
